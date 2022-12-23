@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up | GAMERUN </title>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="icon" href="images/ABB LOGO.jpg" type="image/icon type">
+        <!-- Genom href berättar jag för koden att den ska hänvisa sig till style1 för att kunna färga-->
+    </head>
+    <body>
+        <div class="center">
+            <h1>Sign Up</h1>
+            <form method="post">
+                <!--- Form attributen används för att förtydliga och få den funktion som ett form dokument samt värdet elemten innehåller-->
+                <div class="txt_field">
+                    <input type="text" required>
+                    <!--- Input type skapar en ruta där besökaren kan skriva och väljer värde som i detta fal text, sedan om det krävs att användaren måste fylla i för att kunna skicka in-->
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Not a member?
+                    <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
