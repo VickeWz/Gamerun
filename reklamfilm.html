@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Commercial | GAMERUN</title>
+        <link rel="stylesheet" href="styles.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="images/iPhone 13 Pro Max - 8.png" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Jag använde link samt en url för att förtydliga vilken font den ska använda-->
+    </head>
+    <style>
+    body {
+       overflow: overlay;
+    }
+
+    ::-webkit-scrollbar {
+       width: 10px;
+       background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+       background: grey;
+       border-radius: 2px;
+    }
+    </style>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">
+                    <i class="fas fa-walking"></i>
+                    GAMERUN
+                </a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__links">Home</a>
+                        <!--- Detta är en del av menyn och man kan se att den inte har någon hyper reference. Det är detta som visar hem och jag klassifierade för att enklare kunna ändra på storlek samt färg.-->
+                    </li>
+                    <li class="navbar__item">
+                        <a href="reklamfilm.html" class="navbar__links">Commercial</a>
+                        <!--- Genom att använda href visar man vart den ska gå vid en visst knapptryck-->
+                    </li>
+                    <li class="navbar__item">
+                        <a href="produkt.html" class="navbar__links">Product</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="om_oss.html" class="navbar__links">About</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="sign__up.html" class="button">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>COMMERCIAL</h1>
+                    <p>Click the button</p>
+                    <button class="main__btn">
+                        <a href="https://resource-service.mmcloud.se/api/v1/resources/334488?article_id=74ab2c98-27c5-4b6a-b076-c2c864466fc8&bi=BI6590%2CBI90345&canonical_url=https%3A%2F%2Fwww.vlt.se%2F2021-07-26%2Ftv-kvartetten-vill-andra-ungas-liv-med-sin-app--kan-vinna-220000-kronor&glimr=glcountry_se%2Cglwe_sunny_skies%2Cglwet_-5%2Cglng_sv%2Cglr_vastmanland%2Cglc_vasteras%2Cglm_vasteras%2Cglp_&ta=null&tags=story%3Astarship-2021%2Ctopic%3Aekonomi%2Ctopic%3A-naringsliv-och-finans%2Ctopic%3Aforetagsekonomi%2Ctopic%3Aforetagande%2Clocation%3Avasteras%2Clocation%3Avastmanlands-lan&unit_id=%2F34405621%2Fmm%2Fvlt">Spela</a>
+                    </button>
+                </div>
+                <div class="main__img--container">
+                    <video id="main__img" src="https://resource-service.mmcloud.se/api/v1/resources/334488?article_id=74ab2c98-27c5-4b6a-b076-c2c864466fc8&bi=BI6590%2CBI90345&canonical_url=https%3A%2F%2Fwww.vlt.se%2F2021-07-26%2Ftv-kvartetten-vill-andra-ungas-liv-med-sin-app--kan-vinna-220000-kronor&glimr=glcountry_se%2Cglwe_sunny_skies%2Cglwet_-5%2Cglng_sv%2Cglr_vastmanland%2Cglc_vasteras%2Cglm_vasteras%2Cglp_&ta=null&tags=story%3Astarship-2021%2Ctopic%3Aekonomi%2Ctopic%3A-naringsliv-och-finans%2Ctopic%3Aforetagsekonomi%2Ctopic%3Aforetagande%2Clocation%3Avasteras%2Clocation%3Avastmanlands-lan&unit_id=%2F34405621%2Fmm%2Fvlt" controls></video>
+                    <!--- Video taggen gör det möjligt att inkludera en video fil och det krävs controls för att kunna spela videon-->
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>About Us</h2>
+                        <a href="/sign__up">How it works</a>
+                        <a href="/">Testimonials</a>
+                        <a href="/">Careers</a>
+                        <a href="/">Investments</a>
+                        <a href="/">Terms of Service</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Contact Us</h2>
+                        <a href="/">Contact</a>
+                        <a href="/">Support</a>
+                        <a href="/">Destinations</a>
+                        <a href="/">Sponsorships</a>
+                    </div>
+                </div>
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>Videos</h2>
+                        <a href="/">Submit Video</a>
+                        <a href="/">Ambassadors</a>
+                        <a href="/">Agency</a>
+                        <a href="/">Influencer</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Social Media</h2>
+                        <a href="/">Instagram</a>
+                        <a href="https://www.instagram.com/officalgamerun/">Facebook</a>
+                        <a href="/">Youtube</a>
+                        <a href="/">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">
+                            <i class="fas fa-walking"></i>GAMERUN
+                        </a>
+                    </div>
+                    <p class="website__rights">©GAMERUN 2022. All rights reserved</p>
+                    <div class="social__icons">
+                        <a
+                            class="social__icon--link"
+                            href="/"
+                            target="_blank"
+                            aria-label="Facebook"
+                        >
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a
+                            class="social__icon--link"
+                            href="/"
+                            target="_blank"
+                            aria-label="Instagram"
+                        >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a
+                            class="social__icon--link"
+                            href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+                            target="_blank"
+                            aria-label="Youtube"
+                        >
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a
+                            class="social__icon--link"
+                            href="/"
+                            target="_blank"
+                            aria-label="Twitter"
+                        >
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a
+                            class="social__icon--link"
+                            href="/"
+                            target="_blank"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
