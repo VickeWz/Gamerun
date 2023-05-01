@@ -319,6 +319,10 @@ height: 680px;
 #main__img {
   height: 100%;
   width: 100%;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #00B2FF, #fafbfc);
 }
 
 #main__img2 {
@@ -327,9 +331,11 @@ height: 680px;
 }
 
 #main__img3 {
-  height: 65%;
-  width: 65%;
-  text-align: left;
+  position: relative;
+  right: -25px;
+  height: 120%;
+  width: 120%;
+  right: 50px;
 }
 
 /* Mobile Responsive */
@@ -668,7 +674,7 @@ background-color: #0A0A1C;
 .images li img {
  /* max-width off its parent container. so 40% */
  max-width: 100%;
- background-color: #131313;
+ background-color: #0A0A1C;
 }
 main article {
   /* both of the 2 below work in tandem - if a screen size is below 1200px then show 100% of screen size if its above 1200px then only show a max-width of 1200px; */
