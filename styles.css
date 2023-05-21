@@ -6,7 +6,6 @@
 }
 
 .navbar {
-  background: #0A0A1C;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -22,17 +21,17 @@
   justify-content: space-between;
   height: 80px;
   z-index: 1;
-  width: 100%;
+  width: 50%;
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 505px;
 }
 
+
 #navbar__logo {
-  background-color: #0085FF;
-  background-image: linear-gradient(to top, #00B2FF 100%, #00B2FF 100%);
+  background-color: #ffffff;
+  background-image: #ffffff;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -43,6 +42,8 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 .fa-walking {
@@ -55,13 +56,28 @@
   list-style: none;
   text-align: center;
 }
+.navbar__item2 {
+  height: 80px;
+  justify-content: left;
+  justify-content: space-between;
 
+}
 .navbar__item {
   height: 80px;
+  
+}
+.navbar__item3 {
+  height: 80px;
+  margin-left: 150px;
+  
+}
+.navbar__item4 {
+  height: 80px;
+  margin-right: 150px;
 }
 
 .navbar__links {
-  color: #fff;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,9 +91,11 @@
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  width: 100%;
+  width: 150%;
 }
-
+img {
+  margin-right: 13px;
+}
 .button {
   display: flex;
   justify-content: center;
@@ -85,12 +103,14 @@
   text-decoration: none;
   padding: 10px 20px;
   height: 100%;
-  width: 100%;
+  width: fit-content;
   border: none;
   outline: none;
   border-radius: 4px;
   background: #0085FF;
-  color: #fff;
+  color: #ffffff;
+  white-space: nowrap;
+   text-align: center;
 }
 
 .button:hover {
@@ -99,7 +119,7 @@
 }
 
 .navbar__links:hover {
-  color: #f77062;
+  color: #289be7;
   transition: all 0.3s ease;
 }
 
@@ -146,7 +166,7 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: #fff;
+    background: #ffffff;
   }
 
   .navbar__item {
@@ -200,11 +220,13 @@
 
 /* Main Content CSS */
 .main {
-  background-color: #0A0A1C;
+  background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%);
+  background-color: #26335D;
 }
 
 body {
-background-color: #0A0A1C;
+  background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%);
+  background-color: #26335D;
 }
 
 .main__container {
@@ -213,8 +235,7 @@ background-color: #0A0A1C;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 90vh;
-  background-color: #0A0A1C;
+  height: 100vh;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -223,40 +244,39 @@ background-color: #0A0A1C;
 }
 
 .main__content {
-  color: #fff;
+  color: #ffffff;
+  margin-bottom: 50%;
   width: 100%;
+  margin-right: 50%;
 }
 
 .main__content h1 {
   font-size: 4rem;
-  background-color: #0085FF;
-  background-image: linear-gradient(to top, #00B2FF 100%, #00B2FF 100%);
+  background-image: linear-gradient(to top, #ffffff 100%, #ffffff 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  background-color: #0A0A1C;
 }
 
 .main__content h2 {
   font-size: 4rem;
   margin-top: 10px;
-  background-color: #0085FF;
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  background-color: #0A0A1C;
+
 }
 
 .main__content p {
   margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
-  background-color: #0A0A1C;
+  font-size: 2.1rem;
+  font-weight: 500;
+
 }
 
 .main__btn {
@@ -264,7 +284,7 @@ background-color: #0A0A1C;
   background-image: linear-gradient(to top, #00B2FF 100%, #00B2FF 100%);
   padding: 14px 32px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #fff;
   margin-top: 2rem;
   cursor: pointer;
@@ -273,7 +293,26 @@ background-color: #0A0A1C;
   outline: none;
 }
 
+.learn__btn {
+  background:  transparent;
+  border:  1px solid white;
+  float:  none;
+  border-radius: 6px;
+  text-align:  center;
+  margin-top: 2rem;
+  padding: 14px 32px;
+  font-size:  1rem;
+  color:  #fff;
+}
+
 .main__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.learn__btn a {
   position: relative;
   z-index: 2;
   color: #fff;
@@ -302,6 +341,7 @@ background-color: #0A0A1C;
 
 .main__img--container {
   text-align: center;
+  margin-bottom: 50%;
 }
 
 .main__img--container2 {
@@ -323,6 +363,7 @@ height: 680px;
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(to left, #00B2FF, #fafbfc);
+  margin-left: 150px;
 }
 
 #main__img2 {
@@ -333,9 +374,10 @@ height: 680px;
 #main__img3 {
   position: relative;
   right: -25px;
-  height: 120%;
-  width: 120%;
+  height: 150%;
+  width: 150%;
   right: 50px;
+  margin-top: 10%;
 }
 
 /* Mobile Responsive */
@@ -353,24 +395,24 @@ height: 680px;
   .main__content {
     text-align: center;
     margin-bottom: 4rem;
-    background-color: #0A0A1C;
+
   }
 
   .main__content h1 {
     font-size: 2.5rem;
     margin-top: 2rem;
-    background-color: #0A0A1C;
+
   }
 
   .main__content h2 {
     font-size: 3rem;
-    background-color: #0A0A1C;
+
   }
 
   .main__content p {
     margin-top: 1rem;
     font-size: 1.5rem;
-    background-color: #0A0A1C;
+
   }
 }
 
@@ -378,18 +420,18 @@ height: 680px;
   .main__content h1 {
     font-size: 2rem;
     margin-top: 3rem;
-    background-color: #0A0A1C;
+
   }
 
   .main__content h2 {
     font-size: 2rem;
-    background-color: #0A0A1C;
+
   }
 
   .main__content p {
     margin-top: 2rem;
     font-size: 1.5rem;
-    background-color: #0A0A1C;
+
   }
 
   .main__btn {
@@ -400,16 +442,15 @@ height: 680px;
 
 /* Services Section */
 .services {
-  background: #0A0A1C;;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .services h1 {
-  background-color: #ff8177;
+
   background-image: linear-gradient(to top, #00B2FF 100%, #00B2FF 100%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -647,34 +688,41 @@ height: 680px;
   }
 }
 article h2{
-  font-size: 48px;
-  background: linear-gradient(to top, #00B2FF 100%, #00B2FF 100%);
+  font-size: 60px;
+  background: white;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        margin-bottom: 10px;
+
 }
 
 article p {
 /* vertical space between lines. 2em takes the font-size of the paragraph tag which by default is 16px in the browser and it multiplies it by 2. */
 line-height: 2em;
 color: white;
-background-color: #0A0A1C;
+background-color: transparent;
+font-size: 22px;
+margin-bottom: 30px;
 }
 
 .images{
   text-align: center;
   white-space: nowrap;
-  background-color: #0A0A1C;
+  background-color: transparent;
+  margin-bottom: 200px;
+  width: 100%;
+  height: 100%;
 }
 .images li{
   display: inline-block;
   width: 300px;
   margin: 20px 5%;
-  background-color: #0A0A1C;
+  background-color: transparent;
 }
 .images li img {
  /* max-width off its parent container. so 40% */
  max-width: 100%;
- background-color: #0A0A1C;
+ background-color: transparent;
 }
 main article {
   /* both of the 2 below work in tandem - if a screen size is below 1200px then show 100% of screen size if its above 1200px then only show a max-width of 1200px; */
@@ -684,12 +732,13 @@ main article {
   padding: 0 40px;
   box-sizing: border-box;
   /* incorporates padding into the total width so max width can by 100% inclusive of the padding. */
-  background-color: #0A0A1C;
+  background-color: transparent;
 
 }
 article span {
   /* vertical space between lines. 2em takes the font-size of the paragraph tag which by default is 16px in the browser and it multiplies it by 2. */
   line-height: 2em;
   color: white;
-  background-color: #0A0A1C;
+  background-color: transparent;
+  font-size: 22px;
   }
