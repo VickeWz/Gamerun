@@ -203,8 +203,8 @@ input[type="submit"]:hover{
   width: 150%;
   flex-direction: row;
 }
-.img {
-  margin-left: 20px;
+img {
+  margin-right: 13px;
 }
 .button {
   display: flex;
