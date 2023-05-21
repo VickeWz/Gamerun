@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | GAMERUN</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -18,27 +18,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <style>
-     body {
-       overflow: overlay;
-    }
-
     ::-webkit-scrollbar {
        width: 10px;
        background: transparent;
     }
 
     ::-webkit-scrollbar-thumb {
-       background: grey;
        border-radius: 2px;
     }
     </style>
-    <body>
+    <body class="main">
         <!-- Navbar Section -->
         <nav class="navbar">
             <div class="navbar__container">
                 <a href="/" id="navbar__logo">
-                    <i class="fas fa-walking"></i>
-                    GAMERUN
+                    <img src="images/Vector.png" alt="img">
+                    GameRun
                 </a>
                 <div class="navbar__toggle" id="mobile-menu">
                     <span class="bar"></span>
@@ -46,20 +41,23 @@
                     <span class="bar"></span>
                 </div>
                 <ul class="navbar__menu">
-                    <li class="navbar__item">
+                    <li class="navbar__item3">
                         <a href="index.html" class="navbar__links">Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="reklamfilm.html" class="navbar__links">Commercial</a>
                     </li>
                     <li class="navbar__item">
                         <a href="produkt.html" class="navbar__links">Product</a>
                     </li>
                     <li class="navbar__item">
+                        <a href="reklamfilm.html" class="navbar__links">Trailer</a>
+                    </li>
+                    <li class="navbar__item4">
                         <a href="om_oss.html" class="navbar__links">About</a>
                     </li>
+                    <li class="navbar__item2">
+                        <a href="login.html" class="navbar__links">Login</a>
+                    </li>
                     <li class="navbar__btn">
-                        <a href="sign__up.html" class="button">Register</a>
+                        <a href="sign__up.html" class="button">Join Us</a>
                     </li>
                 </ul>
             </div>
@@ -68,10 +66,13 @@
         <div class="main">
             <div class="main__container">
                 <div class="main__content">
-                    <h1>GAMERUN</h1>
+                    <h1>GameRun</h1>
                     <p>Fantastic product that makes the parent satisfied</p>
                     <button class="main__btn">
-                        <a href="produkt.html">Read more</a>
+                        <a href="sign__up.html">Join Us</a>
+                    </button>
+                    <button class="learn__btn">
+                        <a href="produkt.html">Learn More</a>
                     </button>
                 </div>
                 <div class="main__img--container">

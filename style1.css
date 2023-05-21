@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap'); /* Jag använde link samt en url för att förtydliga vilken font den ska använda */
 *{ 
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Kumbh sans", sans-serif;
 } /* Jag designade backgrunden genom att skapa en box tala om att jag skulle ha font poppin och att margin och padding skulle inte ha något värd */
 body{
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg,#00b2ff, #0A0A1C);
-  height: 100vh;
+    background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%);
+    background-color: #26335D;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
   overflow: hidden;
+  }
   /* Jag designade body klassen genom att tala om att marginalen skulle vara 0 samt padding. Backgrounden i body classen skulle vara linear gradient (färgkoder till sidan). Höjden ska vara 100 vh som jag inte har helt klart för mig men vh är en typ av enhet. Overflow är bara ett externt kommando som berättar ifall sidan skulle överflödas ska den gömmas. */
-}
 .center{
   position: absolute;
   top: 50%;
@@ -111,4 +113,120 @@ input[type="submit"]:hover{
 }
 .signup_link a:hover{
   text-decoration: underline;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 50%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 505px;
+}
+
+#navbar__logo {
+  background-color: #ffffff;
+  background-image: #ffffff;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.fa-walking {
+  margin-right: 0.5rem;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+.navbar__item2 {
+  height: 80px;
+  justify-content: left;
+  justify-content: space-between;
+
+}
+.navbar__item {
+  height: 80px;
+  
+}
+.navbar__item3 {
+  height: 80px;
+  margin-left: 150px;
+  
+}
+.navbar__item4 {
+  height: 80px;
+  margin-right: 150px;
+}
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 150%;
+  flex-direction: row;
+}
+.img {
+  margin-left: 20px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: fit-content;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #0085FF;
+  color: #fff;
+}
+
+.button:hover {
+  background: #4837ff;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+  color: #289be7;
+  transition: all 0.3s ease;
 }
