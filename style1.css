@@ -14,6 +14,100 @@ body{
     height: 100vh;
   overflow: hidden;
   }
+  .navbar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-top: 70px;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 50%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 505px;
+  }
+  
+  
+  #navbar__logo {
+    background-color: #ffffff;
+    background-image: #ffffff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+  .navbar__item2 {
+    height: 80px;
+    justify-content: left;
+    justify-content: space-between;
+  
+  }
+  .navbar__item {
+    height: 80px;
+    
+  }
+  .navbar__item3 {
+    height: 80px;
+    margin-left: 150px;
+    
+  }
+  .navbar__item4 {
+    height: 80px;
+    margin-right: 150px;
+  }
+  
+  .navbar__links {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+  }
+  
+  .navbar__btn {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    width: 150%;
+    text-align: left;
+  }
+  .navbar__btn1 {
+    margin-left: -100px;
+  }
+  img.img {
+    margin-left: -25px;
+  }
+  img {
+    margin-right: 13px;
+  }
   /* Jag designade body klassen genom att tala om att marginalen skulle vara 0 samt padding. Backgrounden i body classen skulle vara linear gradient (färgkoder till sidan). Höjden ska vara 100 vh som jag inte har helt klart för mig men vh är en typ av enhet. Overflow är bara ett externt kommando som berättar ifall sidan skulle överflödas ska den gömmas. */
 .center{
   position: absolute;
@@ -114,111 +208,18 @@ input[type="submit"]:hover{
 .signup_link a:hover{
   text-decoration: underline;
 }
-
-.navbar {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.navbar__container {
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  z-index: 1;
-  width: 50%;
-  max-width: 1300px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 505px;
-}
-
-#navbar__logo {
-  background-color: #ffffff;
-  background-image: #ffffff;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: 20px;
-}
-
-.fa-walking {
-  margin-right: 0.5rem;
-}
-
-.navbar__menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-}
-.navbar__item2 {
-  height: 80px;
-  justify-content: left;
-  justify-content: space-between;
-
-}
-.navbar__item {
-  height: 80px;
-  
-}
-.navbar__item3 {
-  height: 80px;
-  margin-left: 150px;
-  
-}
-.navbar__item4 {
-  height: 80px;
-  margin-right: 150px;
-}
-
-.navbar__links {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-}
-
-.navbar__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 150%;
-  flex-direction: row;
-}
-img {
-  margin-right: 13px;
-}
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 30px;
   height: 100%;
   width: fit-content;
   border: none;
   outline: none;
   border-radius: 4px;
   background: #0085FF;
-  color: #fff;
+  color: #ffffff;
+  white-space: nowrap;
+  text-align: left;
 }
 
 .button:hover {
