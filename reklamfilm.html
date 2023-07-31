@@ -17,7 +17,8 @@
     </head>
     <style>
     body {
-       overflow: overlay;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     ::-webkit-scrollbar {
@@ -55,11 +56,8 @@
                     <li class="navbar__item4">
                         <a href="om_oss.html" class="navbar__links">About</a>
                     </li>
-                    <li class="navbar__item2">
-                        <a href="login.html" class="navbar__links">Login</a>
-                    </li>
                     <li class="navbar__btn">
-                        <a href="sign__up.html" class="button">Join Us</a>
+                        <a href="/" class="button">Download</a>
                         <img class="img" src="images/Vector1.png" alt="">
                     </li>
                 </ul>
@@ -67,113 +65,17 @@
         </nav>
         <div class="main">
             <div class="main__container">
-                <div class="main__content">
-                    <h1>Trailer</h1>
-                    <p>
-                        Here is your introduction. Feel free to watch it!
-                    </p>
-                    <button class="main__btn">
-                        <a href="sign__up.html">Join Us</a>
-                    </button>
-                    <button class="learn__btn">
-                        <a href="om_oss.html">Learn More</a>
-                    </button>
-                </div>
+                <div class="main__content"></div>
                 <div class="main__img--container">
-                    <video id="main__img" src="images/GamerunAD_DayOne_1%20(1).mp4" controls=""></video>
+                    <video
+                        autoplay
+                        loop
+                        muted
+                        id="main__img"
+                        src="images/GamerunAD_DayOne_1%20(1).mp4"
+                    ></video>
                 </div>
             </div>
-        </div>
-        <!-- Footer Section -->
-        <div class="footer__container">
-            <div class="footer__links">
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>About Us</h2>
-                        <a href="/sign__up">How it works</a>
-                        <a href="/">Testimonials</a>
-                        <a href="/">Careers</a>
-                        <a href="/">Investments</a>
-                        <a href="/">Terms of Service</a>
-                    </div>
-                    <div class="footer__link--items">
-                        <h2>Contact Us</h2>
-                        <a href="https://www.instagram.com/official.gamerun/">Contact</a>
-                        <a href="/">Support</a>
-                        <a href="/">Destinations</a>
-                        <a href="/">Sponsorships</a>
-                    </div>
-                </div>
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>Videos</h2>
-                        <a href="https://www.instagram.com/official.gamerun/">Submit Video</a>
-                        <a href="/">Ambassadors</a>
-                        <a href="/">Agency</a>
-                        <a href="/">Influencer</a>
-                    </div>
-                    <div class="footer__link--items">
-                        <h2>Social Media</h2>
-                        <a href="https://www.instagram.com/official.gamerun/">Instagram</a>
-                        <a href="/">Facebook</a>
-                        <a href="https://www.youtube.com/channel/UCFCelFMQ-fsg6OfvvUECYHg">Youtube</a>
-                        <a href="/">Twitter</a>
-                    </div>
-                </div>
-            </div>
-            <section class="social__media">
-                <div class="social__media--wrap">
-                    <div class="footer__logo">
-                        <a href="/" id="footer__logo">
-                            <img src="images/Vector.png" alt="img">
-                            GameRun
-                        </a>
-                    </div>
-                    <p class="website__rights">©GameRun 2022. All rights reserved</p>
-                    <div class="social__icons">
-                        <a
-                            class="social__icon--link"
-                            href="/"
-                            target="_blank"
-                            aria-label="Facebook"
-                        >
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a
-                            class="social__icon--link"
-                            href="https://www.instagram.com/official.gamerun/"
-                            target="_blank"
-                            aria-label="Instagram"
-                        >
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a
-                            class="social__icon--link"
-                            href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
-                            target="_blank"
-                            aria-label="Youtube"
-                        >
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a
-                            class="social__icon--link"
-                            href="/"
-                            target="_blank"
-                            aria-label="Twitter"
-                        >
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a
-                            class="social__icon--link"
-                            href="/"
-                            target="_blank"
-                            aria-label="LinkedIn"
-                        >
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
         </div>
         <script src="app.js"></script>
     </body>
