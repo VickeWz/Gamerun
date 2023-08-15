@@ -13,7 +13,7 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 10;
   margin-top: 70px;
 }
 
@@ -28,7 +28,6 @@
   margin-left: auto;
   padding-right: 505px;
 }
-
 
 #navbar__logo {
   background-color: #ffffff;
@@ -80,6 +79,10 @@
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  padding-bottom: 4px; /* Adjust as needed */
+}
+.navbar__links.active {
+  border-bottom: 2px solid rgb(255, 255, 255); /* Highlight color */
 }
 
 .navbar__btn {
@@ -105,6 +108,9 @@ img.img {
   vertical-align: middle;
   margin-left: 10px; /* Adjust the margin as needed */
 }
+.logo-image {
+  margin-right: 10px;
+}
 .button {
   text-decoration: none;
   padding: 10px 30px;
@@ -115,6 +121,19 @@ img.img {
   border-radius: 10px;
   background: #0085FF;
   color: #ffffff;
+  white-space: nowrap;
+  text-align: left;
+}
+.button1 {
+  text-decoration: none;
+  padding: 10px 30px;
+  height: 100%;
+  width: fit-content;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background: #0085FF;
   white-space: nowrap;
   text-align: left;
 }
@@ -148,10 +167,13 @@ img.img {
     display: flex;
     justify-content: space-between;
     height: 80px;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     max-width: 1300px;
     padding: 0;
+  }
+  .button1 {
+    display: none
   }
 
   .navbar__menu {
@@ -164,7 +186,7 @@ img.img {
     opacity: 1;
     transition: all 0.5s ease;
     height: 50vh;
-    z-index: -1;
+    z-index: 2;
   }
 
   .navbar__menu.active {
@@ -172,10 +194,17 @@ img.img {
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 99;
-    height: 50vh;
+    z-index: 5;
+    height: 60vh;
     font-size: 1.6rem;
+    position: absolute;
   }
+
+  /* Ensure menu items are under each other */
+.navbar__menu.active li {
+  display: block;
+  margin: 10px 0;
+}
   #navbar__logo {
     padding-left: 25px;
   }
@@ -266,13 +295,14 @@ body {
   margin-bottom: 50%;
   width: 100%;
   margin-right: 50%;
-  z-index: 999;
+  z-index: 5;
 }
 .main__content2 {
   color: #ffffff;
   margin-bottom: 50%;
-  width: 100%;
+  width: 50%;
   margin-right: 50%;
+  white-space: nowrap; /* Prevent the text from wrapping */
 }
 
 .main__content h1 {
@@ -284,7 +314,7 @@ body {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.main__content2 h1 {
+.main__content .h20 {
   font-size: 4rem;
   background-image: linear-gradient(to top, #ffffff 100%, #ffffff 100%);
   background-size: 100%;
@@ -292,8 +322,21 @@ body {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-top: -400px;
-  margin-left: 835px;
+  transform: translateX(300px) translateY(-100px);
+  display: inline-block;
+  text-decoration: underline;
+}
+.main__content2 h1 {
+  font-size: 2.5rem;
+  background-image: linear-gradient(to top, #ffffff 100%, #ffffff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-top: -275px;
+  margin-left: 845px;
+  display: inline-block; /* Add this line */
 }
 
 .main__content h2 {
@@ -312,12 +355,20 @@ body {
   margin-top: 1rem;
   font-size: 2.1rem;
   font-weight: 500;
-
+}
+.main__content .p20 {
+  margin-top: 1rem;
+  font-size: 2.1rem;
+  font-weight: 500;
+  transform: translateY(500px);
 }
 .main__content2 p {
   margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 525;
+  line-height: 2em;
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    margin-bottom: 25px;
   margin-left: 855px;
 
 }
@@ -353,7 +404,15 @@ body {
   color: #fff;
   text-decoration: none;
 }
-
+main article h2 {
+  font-size: 60px;
+  background: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 10px;
+  transform: translateY(225px);
+  margin-top: 100px;
+}
 .learn__btn a {
   position: relative;
   z-index: 2;
@@ -460,11 +519,31 @@ height: 680px;
     font-size: 1.5rem;
 
   }
+  #main__img3 {
+    position: relative;
+    height: 140%;
+    width: 140%;
+    right: 50px;
+    margin-top: 10%;
+    transform: translateX(-40px) translateY(-150px);
+}
+.ad-background {
+  position: relative;
+  background: linear-gradient(to right, #243652, #0085FF);
+  padding: 45px 0;
+  transform: translateY(-150px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid white;
+  margin-top: 15%;
+}
+
 }
 
 @media screen and (max-width: 480px) {
   .main__content h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     margin-top: 3rem;
 
   }
@@ -483,7 +562,40 @@ height: 680px;
   .main__btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
+    transform: translateX(-100px);
   }
+  .learn__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+    transform: translateX(80px) translateY(-125px);
+  }
+  #main__img2 {
+    height: 100%;
+    width: 100%;
+    margin-top: -80%;
+}
+article h2 {
+  font-size: 40px;
+  background: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 10px;
+  transform: translateY(800px);
+}
+
+.button {
+  display: none;
+}
+#main__img {
+  height: 400%;
+  width: 150%;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #00B2FF, #fafbfc);
+  text-align: center;
+  opacity: 0.8;
+  filter: brightness(50%);
+  transform: translateX(500px);
+}
 }
 
 /* Services Section */
@@ -492,6 +604,7 @@ height: 680px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -500px;
 }
 
 .services h1 {
@@ -502,7 +615,7 @@ height: 680px;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   font-size: 2.5rem;
   transform: translateY(120px);
 }
@@ -536,6 +649,15 @@ height: 680px;
 }
 
 .services__card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.9) 100%
+    ),
+    url(images/Layout\ Phoen\ \(Stats\).png);
+}
+
+.services__card1 {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -597,10 +719,12 @@ height: 680px;
 
   .services h1 {
     font-size: 1.2rem;
+    margin-top: -50%;
   }
 
   .services__card {
     width: 300px;
+    height: 609px;
   }
 }
 
@@ -612,7 +736,6 @@ height: 680px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
 }
 
 #footer__logo {
@@ -736,13 +859,14 @@ height: 680px;
     width: 100%;
   }
 }
-article h2{
+main article .h21 {
   font-size: 60px;
   background: white;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         margin-bottom: 10px;
-
+        transform: translateY(500px);
+        margin-top: 100px;
 }
 
 article p {
@@ -753,6 +877,43 @@ background-color: transparent;
 font-size: 18px;
 margin-bottom: 25px;
 }
+@media screen and (max-width: 480px) {
+  article .p2 {
+    /* vertical space between lines. 2em takes the font-size of the paragraph tag which by default is 16px in the browser and it multiplies it by 2. */
+    line-height: 2em;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    margin-bottom: 25px;
+    transform: translateY(250px);
+    } 
+  }
+article .p2 {
+/* vertical space between lines. 2em takes the font-size of the paragraph tag which by default is 16px in the browser and it multiplies it by 2. */
+line-height: 2em;
+color: white;
+background-color: transparent;
+font-size: 22px;
+margin-bottom: 25px;
+transform: translateY(250px);
+}
+article .s2 {
+  line-height: 2em;
+  color: white;
+  background-color: transparent;
+  font-size:22px;
+  margin-bottom: 25px;
+  transform: translateY(100px); /* Adjust this value as needed */
+  }
+main article .p21 {
+  /* vertical space between lines. 2em takes the font-size of the paragraph tag which by default is 16px in the browser and it multiplies it by 2. */
+  line-height: 2em;
+  color: white;
+  background-color: transparent;
+  font-size: 22px;
+  margin-bottom: 25px;
+  transform: translateY(450px);
+  }
 
 .images{
   text-align: center;
@@ -769,9 +930,10 @@ margin-bottom: 25px;
   background-color: transparent;
 }
 .images li img {
- /* max-width off its parent container. so 40% */
- max-width: 100%;
- background-color: transparent;
+  max-width: 100%;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: -400px;
 }
 main article {
   /* both of the 2 below work in tandem - if a screen size is below 1200px then show 100% of screen size if its above 1200px then only show a max-width of 1200px; */
@@ -790,10 +952,20 @@ article span {
   color: white;
   background-color: transparent;
   font-size: 22px;
+  transform: translateY(500px);
   }
+  article span .span21 {
+    /* vertical space between lines. 2em takes the font-size of the paragraph tag which by default is 16px in the browser and it multiplies it by 2. */
+    line-height: 2em;
+    color: white;
+    background-color: transparent;
+    font-size: 22px;
+    transform: translateY(1500px);
+    }
+    
   .cards-container {
     position: relative;
-    margin-top: 30px;
+    margin-top: -675px;
   }
   .cards-container h2 {
     font-size: 30px;
@@ -906,7 +1078,8 @@ section.card {
   flex-direction: row;
   align-self: flex-start;
   position: relative;
-  box-shadow: 5px 0 0 0 rgba(204,204,204,0.3), -5px 0 0 0 rgba(204,204,204,0.3), 0 5px 0 0 rgba(204,204,204,0.3);
+ box-shadow: 5px 0 0 0 rgba(204,204,204,0.3), -5px 0 0 0 rgba(204,204,204,0.3), 0 5px 0 0 rgba(204,204,204,0.3);
+ margin-top: 600px;
 }
 section.card .text-content {
   display: flex;
@@ -960,6 +1133,7 @@ article {
   min-width:calc(640px + 248px); 
   transform: translateY(-500px); /* Move the element 500 pixels up */
 }
+
 @media all and (max-width: 1100px) {
   body {
     padding: 96px 48px 24px;
@@ -984,6 +1158,7 @@ article {
     padding: 88px 36px 36px;
     flex-direction: column;
     border-radius: 24px;
+    margin-top: 90%;
   }
   section.card .text-content h3 {
     max-width:calc(100% - 150px);
@@ -1004,6 +1179,45 @@ article {
     width: 100%;
     height: auto;
     }
+    .services__card:nth-child(2) {
+      background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.9) 100% ), url(images/Layout\ Phoen\ \(Stats\).png);
+      margin-bottom: 700px;
+      margin-top: -100px;
+  }
+  .services h1 {
+    font-size: 2rem;
+    margin-top: 35rem;
+}
+.ad-background img:nth-child(1) {
+margin-left: -25%;
+}
+.ad-background img:nth-child(2) {
+  margin-left: -17%;
+  max-width: 20%;
+  }
+  .ad-background img:nth-child(3) {
+    margin-left: -7%;
+    }
+    .ad-background img:nth-child(4) {
+      margin-left: 2%;
+      }
+      .ad-background img:nth-child(5) {
+        margin-left: 12%;
+        }
+#main__img {
+  height: 100%;
+  width: 113%;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #00B2FF, #fafbfc);
+  text-align: center;
+  margin-left: -35px;
+  margin-top: -180px;
+  opacity: 0.8;
+  filter: brightness(50%);
+}
+.button {
+  display: none
+}
 }
 :focus,
 :active {
@@ -1103,4 +1317,130 @@ article {
 }
 .wrapper li:hover a i {
   color: white; /* Set the color to white when the li is hovered */
+}
+
+.ad-background {
+  position: relative;
+  background: linear-gradient(to right, #243652, #0085FF);
+  padding: 45px 0;
+  transform: translateY(-150px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid white;
+}
+
+.ad-background img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); /* Center the images vertically */
+  object-fit: contain;
+  max-width: 100px;
+  mix-blend-mode: color-burn;
+  z-index: 1;
+}
+
+/* Apply different horizontal positions for each image */
+.ad-background img:nth-child(1) {
+  left: 30%;
+}
+
+.ad-background img:nth-child(2) {
+  left: 40%;
+}
+
+.ad-background img:nth-child(3) {
+  left: 50%;
+}
+
+.ad-background img:nth-child(4) {
+  left: 60%;
+}
+
+.ad-background img:nth-child(5) {
+  left: 70%;
+}
+
+@media screen and (max-width: 480px) { 
+  body.main .ad-background {
+    max-width: 100%;
+    margin-top: 30%;
+  }
+  .ad-background img:nth-child(1) {
+    left: 2%;
+    max-width: 18%;
+  }
+  
+  .ad-background img:nth-child(2) {
+    left: 20%;
+    max-width: 20%;
+  }
+  
+  .ad-background img:nth-child(3) {
+    left: 42%;
+    max-width: 17%;
+  }
+  
+  .ad-background img:nth-child(4) {
+    left: 63%;
+    max-width: 17%;
+  }
+  
+  .ad-background img:nth-child(5) {
+    left: 82%;
+    max-width: 18%;
+  }
+  #main__img3 {
+    position: relative;
+    height: 150%;
+    width: 150%;
+    right: 50px;
+    margin-top: -35%;
+}
+.main__content .h20 { 
+  font-size: 4rem;
+    background-image: linear-gradient(to top, #ffffff 100%, #ffffff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transform: translateX(-50px) translateY(-100px);
+    display: inline-block;
+    text-decoration: underline;
+}
+section.card {
+  margin-top: 600px;
+}
+.services__card:nth-child(2) {
+  background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.9) 100% ), url(images/Layout\ Phoen\ \(Stats\).png);
+  margin-top: -20%;
+}
+.footer__container {
+  background-color: #141414;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10%;
+}
+  }
+
+.AppStore {
+  max-width: 30%;
+  height: auto;
+  transform: translateY(20px);
+}
+
+.GooglePlay {
+  max-width: 40%;
+  height: auto;
+  transform: translateY(36px) translateX(10px);
+}
+@media screen and (max-width: 480px) {
+  .GooglePlay {
+      transform: translateY(28px) translateX(20px);
+  }
 }

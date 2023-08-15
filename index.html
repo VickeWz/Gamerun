@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | GAMERUN</title>
         <link rel="stylesheet" href="style.css">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="agency.css" rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -36,7 +38,7 @@
         <nav class="navbar">
             <div class="navbar__container">
                 <a href="/" id="navbar__logo">
-                    <img src="images/Vector.png" alt="img">
+                    <img src="images/Vector.png" alt="img" class="logo-image">
                     GameRun
                 </a>
                 <div class="navbar__toggle" id="mobile-menu">
@@ -46,7 +48,7 @@
                 </div>
                 <ul class="navbar__menu">
                     <li class="navbar__item3">
-                        <a href="index.html" class="navbar__links">Home</a>
+                        <a href="index.html" class="navbar__links active">Home</a>
                     </li>
                     <li class="navbar__item">
                         <a href="produkt.html" class="navbar__links">Product</a>
@@ -58,8 +60,7 @@
                         <a href="om_oss.html" class="navbar__links">About</a>
                     </li>
                     <li class="navbar__btn">
-                        <a href="/" class="button">Download</a>
-                        <img class="img" src="images/Vector1.png" alt="">
+                        <a href="/" class="button1">Get Started</a>
                     </li>
                 </ul>
             </div>
@@ -68,145 +69,246 @@
         <div class="main">
             <div class="main__container">
                 <div class="main__content">
-                    <h1>GameRun</h1>
+                    <h1>Run, Play, Conquer</h1>
                     <p>Fantastic product that makes parents satisfied</p>
-                    <button class="main__btn">
-                        <a href="">Download</a>
-                    </button>
-                    <button class="learn__btn">
-                        <a href="produkt.html">Learn More</a>
-                    </button>
+                    <a href="https://www.apple.com/se/search/GameRun?src=globalnav">
+                        <img class="AppStore" src="images/AppStore.png" alt="">
+                    </a>
+                    <a href="https://play.google.com/store/search?q=GameRun&c=apps">
+                        <img class="GooglePlay" src="images/GooglePlay.png" alt="">
+                    </a>
                 </div>
                 <div class="main__img--container">
                     <img id="main__img3" src="images/Mockup start image.png">
                 </div>
             </div>
         </div>
-        <div class="main">
-            <div class="main__container">
-                <div class="main__content2">
-                    <h1>Impact</h1>
-                    <p>By implementing GameRun you will gain several benefits as the following...</p>
-                    <button class="button123">
-                        <a href="produkt.html">Learn More</a>
-                    </button>
-                </div>
-            </main>
+        <div class="ad-background">
+            <img src="images/adidas-logo-symbol-clothes-design-icon-abstract-football-illustration-free-vector.jpg" alt="">
+            <img src="images/aihsb2x7u0eokb7800ty.png" alt="">
+            <img src="images/abb-logo-black-and-white.png" alt="">
+            <img src="images/Brooks-logo-BE9048B4D9-seeklogo.com.png" alt="">
+            <img src="images/nike-logo-black-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg" alt="">
         </div>
-    </div>
-    <article>
-        <section class="card">
-            <div class="text-content">
-                <h3>Why should you use GameRun?</h3>
-                <p>
-                    While this app can be motivating and enjoyable, it's essential to remember that physical activity itself is a valuable and rewarding experience. Using the app as a tool to supplement a healthy lifestyle rather than relying solely on rewards is the most balanced approach to long-term health and well-being.
-                </div>
-                <div class="visual">
-                    <img src="images/desktop-wallpaper-running-motivation-keep-running.jpg" alt="">
-                </div>
-            </section>
-        </article>
-        <!-- Services Section -->
-        <div class="services">
-            <h1>See what the product is about</h1>
-            <div class="services__container">
-                <div class="services__card"></div>
-                <div class="services__card1"></div>
-                <div class="services__card"></div>
-                <div class="services__card1"></div>
-            </div>
-        </div>
-        <!-- Footer Section -->
-        <div class="footer__container">
-            <div class="footer__links">
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>About Us</h2>
-                        <a href="/sign__up">How it works</a>
-                        <a href="/">Testimonials</a>
-                        <a href="/">Careers</a>
-                        <a href="/">Investments</a>
-                        <a href="/">Terms of Service</a>
-                    </div>
-                    <div class="footer__link--items">
-                        <h2>Contact Us</h2>
-                        <a href="https://www.instagram.com/official.gamerun/">Contact</a>
-                        <a href="/">Support</a>
-                        <a href="/">Destinations</a>
-                        <a href="/">Sponsorships</a>
+        <section class="page-section" id="tjanster">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Services</h2>
+                        <h3 class="section-subheading text-muted">Här kan du läsa om våra tjänster, som vi erbjuder våra kunder.</h3>
                     </div>
                 </div>
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>Videos</h2>
-                        <a href="https://www.instagram.com/official.gamerun/">Submit Video</a>
-                        <a href="/">Ambassadors</a>
-                        <a href="/">Agency</a>
-                        <a href="/">Influencer</a>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Procucts</h4>
+                        <p class="text-muted">Our product is chosen by us. We want to offer our customers the best on the market, at the lowest possible price. We're always looking for new fun features to provide.</p>
                     </div>
-                    <div class="footer__link--items">
-                        <h2>Social Media</h2>
-                        <a href="https://www.instagram.com/official.gamerun/">Instagram</a>
-                        <a href="/">Facebook</a>
-                        <a href="https://www.youtube.com/channel/UCFCelFMQ-fsg6OfvvUECYHg">Youtube</a>
-                        <a href="/">Twitter</a>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-user-shield fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Our Customers</h4>
+                        <p class="text-muted">
+                            For us, it's very important that our customers are satisfied with their purchase, service, or installation. Therefore, we will do everything to keep all our customers as satisfied customers.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Help</h4>
+                        <p class="text-muted1">If you can't install the app yourself due to time, energy, or knowledge constraints, we have an installation service available on YouTube after the app launch. We'll guide you step by step through setting up your account.</p>
                     </div>
                 </div>
             </div>
-            <section class="social__media">
-                <div class="social__media--wrap">
-                    <div class="footer__logo">
-                        <a href="/" id="footer__logo">
-                            <img src="images/Vector.png" alt="img">
-                            GameRun
-                        </a>
+        </section>
+        <article>
+            <section class="card">
+                <div class="text-content">
+                    <h3>Why should you use GameRun?</h3>
+                    <p>
+                        While this app can be motivating and enjoyable, it's essential to remember that physical activity itself is a valuable and rewarding experience. Using the app as a tool to supplement a healthy lifestyle rather than relying solely on rewards is the most balanced approach to long-term health and well-being.
                     </div>
-                    <p class="website__rights">©GameRun 2023. All rights reserved</p>
-                    <div class="social__icons">
-                        <a
-                            class="social__icon--link"
-                            href="/"
-                            target="_blank"
-                            aria-label="Facebook"
-                        >
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a
-                            class="social__icon--link"
-                            href="https://www.instagram.com/gamerun.uf/"
-                            target="_blank"
-                            aria-label="Instagram"
-                        >
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a
-                            class="social__icon--link"
-                            href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
-                            target="_blank"
-                            aria-label="Youtube"
-                        >
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a
-                            class="social__icon--link"
-                            href="/"
-                            target="_blank"
-                            aria-label="Twitter"
-                        >
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a
-                            class="social__icon--link"
-                            href="/"
-                            target="_blank"
-                            aria-label="LinkedIn"
-                        >
-                            <i class="fab fa-linkedin"></i>
-                        </a>
+                    <div class="visual">
+                        <img src="images/desktop-wallpaper-running-motivation-keep-running.jpg" alt="">
+                    </div>
+                </section>
+            </article>
+            <!-- Services Section -->
+            <div class="services">
+                <h1>See what the product is about</h1>
+                <div class="services__container">
+                    <div class="services__card"></div>
+                    <div class="services__card"></div>
+                    <div class="services__card1"></div>
+                    <div class="services__card1"></div>
+                </div>
+            </div>
+            <section class="bg-light page-section" id="tidslinjen">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading text-uppercase">Timeline</h2>
+                            <h3 class="section-subheading text-muted">Here you can read about our journey with GameRun UF and major events that have happened to us.</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="images/iPhone 13 Pro Max - 8.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>2021-01-25</h4>
+                                            <h4 class="subheading">GameRun created</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">We came with the solution of today's youth sedentary and named it "GameRun".</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="images/MicrosoftTeams-image.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>2021-05-24</h4>
+                                            <h4 class="subheading">Finn Upp Competition</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">We contributed in a competition for innovators and received a second price in the category "Digial Solution".</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>2023-09-7</h4>
+                                            <h4 class="subheading">UF Kickoff</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">We were at the UF kickoff where we got more inspiration and ideas for our company.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <h4>
+                                            Follow
+                                            <br>
+                                            Our
+                                            <br>
+                                            Journey!
+                                        </h4>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
-        </div>
-        <script src="app.js"></script>
-    </body>
-</html>
+            <!-- Footer Section -->
+            <div class="footer__container">
+                <div class="footer__links">
+                    <div class="footer__link--wrapper">
+                        <div class="footer__link--items">
+                            <h2>About Us</h2>
+                            <a href="/sign__up">How it works</a>
+                            <a href="/">Careers</a>
+                            <a href="/">Investments</a>
+                            <a href="/">Terms of Service</a>
+                        </div>
+                        <div class="footer__link--items">
+                            <h2>Contact Us</h2>
+                            <a href="https://www.instagram.com/gamerun.uf/">Contact</a>
+                            <a href="/">Support</a>
+                            <a href="/">Location</a>
+                            <a href="/">Sponsorships</a>
+                        </div>
+                    </div>
+                    <div class="footer__link--wrapper">
+                        <div class="footer__link--items">
+                            <h2>Videos</h2>
+                            <a href="https://www.instagram.com/gamerun.uf/">Trailer</a>
+                            <a href="/">Ambassadors</a>
+                            <a href="/">Agency</a>
+                            <a href="/">Influencer</a>
+                        </div>
+                        <div class="footer__link--items">
+                            <h2>Social Media</h2>
+                            <a href="https://www.instagram.com/gamerun.uf/">Instagram</a>
+                            <a href="/">Facebook</a>
+                            <a href="https://www.youtube.com/channel/UCFCelFMQ-fsg6OfvvUECYHg">Youtube</a>
+                            <a href="/">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <section class="social__media">
+                    <div class="social__media--wrap">
+                        <div class="footer__logo">
+                            <a href="/" id="footer__logo">
+                                <img src="images/Vector.png" alt="img" class="logo-image">
+                                GameRun
+                            </a>
+                        </div>
+                        <p class="website__rights">©GameRun 2023. All rights reserved</p>
+                        <div class="social__icons">
+                            <a
+                                class="social__icon--link"
+                                href="/"
+                                target="_blank"
+                                aria-label="Facebook"
+                            >
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a
+                                class="social__icon--link"
+                                href="https://www.instagram.com/gamerun.uf/"
+                                target="_blank"
+                                aria-label="Instagram"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a
+                                class="social__icon--link"
+                                href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+                                target="_blank"
+                                aria-label="Youtube"
+                            >
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a
+                                class="social__icon--link"
+                                href="/"
+                                target="_blank"
+                                aria-label="Twitter"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a
+                                class="social__icon--link"
+                                href="/"
+                                target="_blank"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script src="app.js"></script>
+        </body>
+    </html>

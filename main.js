@@ -31,7 +31,7 @@
     };
 
     // Switch the slide every 5 seconds and loop the behavior
-    var intervalId = setInterval(switchToNextSlide, 2000);
+    var intervalId = setInterval(switchToNextSlide, 3500);
 
     // Handle the carousel when user hovers over it to prevent switching while hovering
     $owl.on("mouseenter", function () {
@@ -39,7 +39,7 @@
     });
 
     $owl.on("mouseleave", function () {
-      intervalId = setInterval(switchToNextSlide, 2000);
+      intervalId = setInterval(switchToNextSlide, 3500);
     });
   };
 
