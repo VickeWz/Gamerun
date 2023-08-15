@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login | GAMERUN</title>
+        <link rel="stylesheet" href="style1.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="images/iPhone 13 Pro Max - 8.png" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">
+                    <img src="images/Vector.png" alt="img">
+                    GameRun
+                </a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item3">
+                        <a href="index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="produkt.html" class="navbar__links">Product</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="reklamfilm.html" class="navbar__links">Trailer</a>
+                    </li>
+                    <li class="navbar__item4">
+                        <a href="om_oss.html" class="navbar__links">About</a>
+                    </li>
+                    <li class="navbar__item2">
+                        <a href="login.html" class="navbar__links">Login</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="sign__up.html" class="button">Join Us</a>
+                        <img class="img" src="images/Vector1.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+                <!--- Form attributen används för att förtydliga och få den funktion som ett form dokument samt värdet elemten innehåller-->
+                <div class="txt_field">
+                    <input type="text" required>
+                    <!--- Input type skapar en ruta där besökaren kan skriva och väljer värde som i detta fal text, sedan om det krävs att användaren måste fylla i för att kunna skicka in-->
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Not a member?
+                    <a href="sign__up.html">Signup</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
