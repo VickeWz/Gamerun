@@ -832,7 +832,7 @@ a.text-dark:focus,a.text-dark:hover {
     }
 
     @page {
-        size: a3
+        size: 3
     }
 
     .container {

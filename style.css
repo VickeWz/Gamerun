@@ -1433,7 +1433,9 @@ section.card {
   height: auto;
   transform: translateY(20px);
 }
-
+.text-body-emphasis {
+  color: white !important;
+}
 .GooglePlay {
   max-width: 40%;
   height: auto;
