@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
   }
   .text-primary {
-    color: #0085FF !important;
+    color: #26335D !important;
   }
   
   h1,
@@ -20,18 +20,13 @@ html{
   
   .page-section {
     padding: 100px 0;
-    background: #000046;
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
-  background: linear-gradient(to right, #000000, #0085FF);
     border-radius: 0px 0px 300px 300px;
     margin-top: -7.85%;
   }
   @media screen and (max-width: 768px) {
    .page-section {
     padding: 100px 0;
-    background: #000046;
     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
-    background: linear-gradient(to right, #000000, #0085FF);
     border-radius: 0px 0px 300px 300px;
     margin-top: -22.50%;
 }
@@ -113,7 +108,7 @@ html{
   
   .timeline > li .timeline-image {
     position: absolute;
-    z-index: 100;
+    z-index: 3;
     left: 0;
     width: 80px;
     height: 80px;
@@ -122,7 +117,8 @@ html{
     color: white;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: #0085FF;
+    background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%);
+    background-color: #26335D;
   }
   
   .timeline > li .timeline-image h4 {
@@ -262,6 +258,6 @@ html{
     }
   }
   .rounded-circle {
-    border-radius: 50%!important;
+    border-radius: 50%;
     max-width: 100%;
 }
